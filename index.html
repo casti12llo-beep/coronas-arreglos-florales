@@ -1,189 +1,221 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Jardines de Luz | Coronas Fúnebres Bogotá 24 Horas</title>
 
-<meta name="description" content="Coronas fúnebres y arreglos florales en Bogotá. Entrega 24 horas. Atención inmediata por WhatsApp.">
+<meta name="description" content="Coronas fúnebres y arreglos florales en Bogotá. Entrega inmediata 24 horas. Atención personalizada por WhatsApp.">
+
+<meta name="keywords" content="coronas fúnebres bogotá, arreglos florales bogotá, floristería bogotá 24 horas, condolencias bogotá, coronas funerarias">
+
+<meta name="robots" content="index, follow">
 
 <style>
+
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: 'Segoe UI', sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
 }
 
 body{
-    background:#f5f5f5;
-    color:#222;
+background:#f5f5f5;
+color:#222;
+line-height:1.6;
 }
 
 header{
-    background:#0f2d2c;
-    color:white;
-    padding:15px 8%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    position:sticky;
-    top:0;
-    z-index:1000;
+background:#0f2d2c;
+color:white;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 2px 10px rgba(0,0,0,.15);
 }
 
 .logo{
-    font-size:28px;
-    font-weight:bold;
+font-size:28px;
+font-weight:bold;
 }
 
 nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:25px;
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:500;
 }
 
 .hero{
-    min-height:90vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    padding:50px 20px;
-    background:
-    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-    url('https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?w=1600');
-    background-size:cover;
-    background-position:center;
-    color:white;
+min-height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:50px 20px;
+background:
+linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,.60)),
+url('https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?w=1600');
+background-size:cover;
+background-position:center;
+color:white;
 }
 
 .hero-content{
-    max-width:800px;
+max-width:900px;
 }
 
 .hero h1{
-    font-size:60px;
-    margin-bottom:20px;
+font-size:58px;
+margin-bottom:20px;
 }
 
 .hero p{
-    font-size:22px;
-    margin-bottom:30px;
+font-size:22px;
+margin-bottom:30px;
 }
 
 .btn{
-    background:#c8a04d;
-    color:white;
-    padding:15px 30px;
-    text-decoration:none;
-    border-radius:8px;
-    display:inline-block;
-    font-weight:bold;
+background:#c8a04d;
+color:white;
+padding:15px 30px;
+text-decoration:none;
+border-radius:8px;
+display:inline-block;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-2px);
 }
 
 .beneficios{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
-    padding:60px 8%;
-    background:white;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+padding:60px 8%;
+background:white;
 }
 
 .card{
-    background:#fff;
-    padding:30px;
-    text-align:center;
-    border-radius:10px;
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
+background:white;
+padding:30px;
+text-align:center;
+border-radius:12px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.card h2{
+color:#0f2d2c;
+margin-bottom:10px;
 }
 
 .catalogo{
-    padding:80px 8%;
+padding:80px 8%;
 }
 
 .catalogo h2{
-    text-align:center;
-    margin-bottom:40px;
-    font-size:40px;
+text-align:center;
+margin-bottom:40px;
+font-size:40px;
+color:#0f2d2c;
 }
 
 .productos{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:30px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
 }
 
 .producto{
-    background:white;
-    border-radius:12px;
-    overflow:hidden;
-    box-shadow:0 8px 25px rgba(0,0,0,.1);
+background:white;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 8px 25px rgba(0,0,0,.1);
 }
 
 .producto img{
-    width:100%;
-    height:280px;
-    object-fit:cover;
+width:100%;
+height:280px;
+object-fit:cover;
 }
 
 .producto-info{
-    padding:20px;
+padding:20px;
 }
 
 .producto h3{
-    margin-bottom:10px;
+margin-bottom:10px;
 }
 
 .precio{
-    color:#0f2d2c;
-    font-size:24px;
-    font-weight:bold;
-    margin:10px 0;
+color:#0f2d2c;
+font-size:24px;
+font-weight:bold;
+margin:10px 0;
 }
 
 .contacto{
-    background:#0f2d2c;
-    color:white;
-    text-align:center;
-    padding:80px 20px;
+background:#0f2d2c;
+color:white;
+text-align:center;
+padding:80px 20px;
 }
 
 footer{
-    background:#081918;
-    color:white;
-    text-align:center;
-    padding:20px;
+background:#081918;
+color:white;
+text-align:center;
+padding:20px;
 }
 
 .whatsapp{
-    position:fixed;
-    right:20px;
-    bottom:20px;
-    background:#25D366;
-    color:white;
-    text-decoration:none;
-    padding:15px 20px;
-    border-radius:50px;
-    font-weight:bold;
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25D366;
+color:white;
+text-decoration:none;
+padding:15px 20px;
+border-radius:50px;
+font-weight:bold;
+box-shadow:0 5px 20px rgba(0,0,0,.25);
 }
 
 @media(max-width:768px){
 
 .hero h1{
-    font-size:40px;
+font-size:40px;
 }
 
 .hero p{
-    font-size:18px;
+font-size:18px;
 }
 
 nav{
-    display:none;
+display:none;
+}
+
+.catalogo h2{
+font-size:30px;
 }
 
 }
+
 </style>
+
 </head>
 
 <body>
@@ -206,17 +238,40 @@ nav{
 
 <div class="hero-content">
 
-<h1>Coronas Fúnebres Bogotá 24 Horas</h1>
+<h1>Coronas Fúnebres en Bogotá con Entrega Inmediata 24 Horas</h1>
 
 <p>
-Acompañamos con respeto y elegancia los momentos más importantes.
-Entrega inmediata en Bogotá.
+Acompañamos a las familias con arreglos florales elegantes, atención inmediata y entrega en funerarias, iglesias, hospitales y hogares de Bogotá.
 </p>
 
 <a class="btn" href="https://wa.me/573176360337" target="_blank">
 Solicitar por WhatsApp
 </a>
 
+</div>
+
+</section>
+
+<section class="beneficios">
+
+<div class="card">
+<h2>+1.500</h2>
+<p>Entregas realizadas</p>
+</div>
+
+<div class="card">
+<h2>24/7</h2>
+<p>Atención inmediata</p>
+</div>
+
+<div class="card">
+<h2>60 min</h2>
+<p>Tiempo promedio de respuesta</p>
+</div>
+
+<div class="card">
+<h2>100%</h2>
+<p>Satisfacción garantizada</p>
 </div>
 
 </section>
@@ -278,6 +333,77 @@ Solicitar por WhatsApp
 </div>
 </div>
 
+<div class="producto">
+<img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800" alt="">
+<div class="producto-info">
+<h3>Arreglo Condolencias Premium</h3>
+<div class="precio">$420.000</div>
+<a class="btn" href="https://wa.me/573176360337">Cotizar</a>
+</div>
+</div>
+
+<div class="producto">
+<img src="https://images.unsplash.com/photo-1487070183336-b863922373d4?w=800" alt="">
+<div class="producto-info">
+<h3>Cruz Floral Elegante</h3>
+<div class="precio">$450.000</div>
+<a class="btn" href="https://wa.me/573176360337">Cotizar</a>
+</div>
+</div>
+
+<div class="producto">
+<img src="https://images.unsplash.com/photo-1468327768560-75b778cbb551?w=800" alt="">
+<div class="producto-info">
+<h3>Palma de Condolencias</h3>
+<div class="precio">$320.000</div>
+<a class="btn" href="https://wa.me/573176360337">Cotizar</a>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="catalogo">
+
+<h2>Cobertura en Bogotá</h2>
+
+<p style="text-align:center;max-width:900px;margin:auto;font-size:18px;">
+Realizamos entregas en Chapinero, Suba, Engativá, Kennedy, Usaquén, Fontibón, Teusaquillo, Barrios Unidos, Bosa, Ciudad Bolívar y municipios cercanos.
+</p>
+
+</section>
+
+<section class="catalogo">
+
+<h2>Opiniones de nuestros clientes</h2>
+
+<div class="productos">
+
+<div class="producto">
+<div class="producto-info">
+<h3>★★★★★</h3>
+<p>Excelente atención y entrega rápida. Todo llegó en perfectas condiciones.</p>
+<strong>María G.</strong>
+</div>
+</div>
+
+<div class="producto">
+<div class="producto-info">
+<h3>★★★★★</h3>
+<p>Muy elegantes las flores y excelente servicio. Totalmente recomendados.</p>
+<strong>Carlos R.</strong>
+</div>
+</div>
+
+<div class="producto">
+<div class="producto-info">
+<h3>★★★★★</h3>
+<p>Llegaron a tiempo y nos ayudaron en un momento difícil para la familia.</p>
+<strong>Andrea M.</strong>
+</div>
+</div>
+
 </div>
 
 </section>
@@ -289,7 +415,7 @@ Solicitar por WhatsApp
 <br>
 
 <p>
-Escríbenos ahora mismo.
+Escríbenos ahora mismo y recibe atención personalizada las 24 horas.
 </p>
 
 <br>
@@ -302,7 +428,7 @@ WhatsApp: 317 636 0337
 
 <footer>
 
-© 2026 Jardines de Luz - Bogotá
+© 2026 Jardines de Luz - Bogotá | Coronas Fúnebres y Arreglos Florales
 
 </footer>
 
