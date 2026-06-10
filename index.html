@@ -1,12 +1,149 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coronas Fúnebres y Arreglos Florales</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coronas Fúnebres y Arreglos Florales</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f8f8f8;
+    color:#333;
+}
+
+header{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+header h1{
+    font-size:2.5rem;
+}
+
+header p{
+    margin-top:10px;
+}
+
+.hero{
+    padding:60px 20px;
+    text-align:center;
+    background:white;
+}
+
+.hero h2{
+    margin-bottom:15px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    background:#25D366;
+    color:white;
+    padding:12px 24px;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.catalogo{
+    padding:50px 20px;
+}
+
+.catalogo h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.productos{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.producto{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.producto img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.producto h3{
+    padding:15px;
+}
+
+.producto p{
+    padding:0 15px 15px;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+</style>
+
 </head>
 <body>
+
+<header>
     <h1>Coronas Fúnebres y Arreglos Florales</h1>
+    <p>Atención 24 horas - Entrega rápida</p>
+</header>
+
+<section class="hero">
+    <h2>Servicio de Coronas Fúnebres en Colombia</h2>
+    <p>Diseños elegantes para acompañar a tus seres queridos.</p>
+
+    <a class="btn" href="https://wa.me/573001234567" target="_blank">
+        Solicitar por WhatsApp
+    </a>
+</section>
+
+<section class="catalogo">
+    <h2>Nuestros Arreglos</h2>
+
+    <div class="productos">
+
+        <div class="producto">
+            <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=800" alt="">
+            <h3>Corona Tradicional</h3>
+            <p>Diseño elegante con flores blancas.</p>
+        </div>
+
+        <div class="producto">
+            <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=800" alt="">
+            <h3>Arreglo Premium</h3>
+            <p>Flores seleccionadas para homenajes especiales.</p>
+        </div>
+
+        <div class="producto">
+            <img src="https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800" alt="">
+            <h3>Tributo Floral</h3>
+            <p>Arreglo personalizado para ceremonias.</p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
     <p>Servicio disponible 24 horas.</p>
+</footer>
+
 </body>
 </html>
