@@ -3,147 +3,312 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Coronas Fúnebres y Arreglos Florales</title>
+<title>Jardines de Luz | Coronas Fúnebres Bogotá 24 Horas</title>
+
+<meta name="description" content="Coronas fúnebres y arreglos florales en Bogotá. Entrega 24 horas. Atención inmediata por WhatsApp.">
 
 <style>
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 body{
-    background:#f8f8f8;
-    color:#333;
+    background:#f5f5f5;
+    color:#222;
 }
 
 header{
-    background:#222;
+    background:#0f2d2c;
     color:white;
-    text-align:center;
-    padding:40px 20px;
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
 }
 
-header h1{
-    font-size:2.5rem;
+.logo{
+    font-size:28px;
+    font-weight:bold;
 }
 
-header p{
-    margin-top:10px;
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
 }
 
 .hero{
-    padding:60px 20px;
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
     text-align:center;
-    background:white;
+    padding:50px 20px;
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url('https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?w=1600');
+    background-size:cover;
+    background-position:center;
+    color:white;
 }
 
-.hero h2{
-    margin-bottom:15px;
+.hero-content{
+    max-width:800px;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    margin-bottom:30px;
 }
 
 .btn{
-    display:inline-block;
-    margin-top:20px;
-    background:#25D366;
+    background:#c8a04d;
     color:white;
-    padding:12px 24px;
+    padding:15px 30px;
     text-decoration:none;
-    border-radius:5px;
+    border-radius:8px;
+    display:inline-block;
+    font-weight:bold;
+}
+
+.beneficios{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    padding:60px 8%;
+    background:white;
+}
+
+.card{
+    background:#fff;
+    padding:30px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
 }
 
 .catalogo{
-    padding:50px 20px;
+    padding:80px 8%;
 }
 
 .catalogo h2{
     text-align:center;
-    margin-bottom:30px;
+    margin-bottom:40px;
+    font-size:40px;
 }
 
 .productos{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
 }
 
 .producto{
     background:white;
-    border-radius:10px;
+    border-radius:12px;
     overflow:hidden;
-    box-shadow:0 2px 10px rgba(0,0,0,.1);
+    box-shadow:0 8px 25px rgba(0,0,0,.1);
 }
 
 .producto img{
     width:100%;
-    height:250px;
+    height:280px;
     object-fit:cover;
 }
 
-.producto h3{
-    padding:15px;
+.producto-info{
+    padding:20px;
 }
 
-.producto p{
-    padding:0 15px 15px;
+.producto h3{
+    margin-bottom:10px;
+}
+
+.precio{
+    color:#0f2d2c;
+    font-size:24px;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+.contacto{
+    background:#0f2d2c;
+    color:white;
+    text-align:center;
+    padding:80px 20px;
 }
 
 footer{
-    background:#222;
+    background:#081918;
     color:white;
     text-align:center;
     padding:20px;
-    margin-top:40px;
+}
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    padding:15px 20px;
+    border-radius:50px;
+    font-weight:bold;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:40px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+nav{
+    display:none;
+}
+
 }
 </style>
-
 </head>
+
 <body>
 
 <header>
-    <h1>Coronas Fúnebres y Arreglos Florales</h1>
-    <p>Atención 24 horas - Entrega rápida</p>
+
+<div class="logo">
+🌿 Jardines de Luz
+</div>
+
+<nav>
+<a href="#inicio">Inicio</a>
+<a href="#catalogo">Catálogo</a>
+<a href="#contacto">Contacto</a>
+</nav>
+
 </header>
 
-<section class="hero">
-    <h2>Servicio de Coronas Fúnebres en Colombia</h2>
-    <p>Diseños elegantes para acompañar a tus seres queridos.</p>
+<section class="hero" id="inicio">
 
-    <a class="btn" href="https://wa.me/573001234567" target="_blank">
-        Solicitar por WhatsApp
-    </a>
+<div class="hero-content">
+
+<h1>Coronas Fúnebres Bogotá 24 Horas</h1>
+
+<p>
+Acompañamos con respeto y elegancia los momentos más importantes.
+Entrega inmediata en Bogotá.
+</p>
+
+<a class="btn" href="https://wa.me/573176360337" target="_blank">
+Solicitar por WhatsApp
+</a>
+
+</div>
+
 </section>
 
-<section class="catalogo">
-    <h2>Nuestros Arreglos</h2>
+<section class="beneficios">
 
-    <div class="productos">
+<div class="card">
+<h3>🚚 Entrega Rápida</h3>
+<p>Servicio disponible 24 horas.</p>
+</div>
 
-        <div class="producto">
-            <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=800" alt="">
-            <h3>Corona Tradicional</h3>
-            <p>Diseño elegante con flores blancas.</p>
-        </div>
+<div class="card">
+<h3>🌹 Flores Frescas</h3>
+<p>Selección premium para cada arreglo.</p>
+</div>
 
-        <div class="producto">
-            <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=800" alt="">
-            <h3>Arreglo Premium</h3>
-            <p>Flores seleccionadas para homenajes especiales.</p>
-        </div>
+<div class="card">
+<h3>🤝 Atención Personalizada</h3>
+<p>Asesoría inmediata por WhatsApp.</p>
+</div>
 
-        <div class="producto">
-            <img src="https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800" alt="">
-            <h3>Tributo Floral</h3>
-            <p>Arreglo personalizado para ceremonias.</p>
-        </div>
+<div class="card">
+<h3>💳 Pago Seguro</h3>
+<p>Transferencia, Nequi y efectivo.</p>
+</div>
 
-    </div>
+</section>
+
+<section class="catalogo" id="catalogo">
+
+<h2>Nuestro Catálogo</h2>
+
+<div class="productos">
+
+<div class="producto">
+<img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=800" alt="">
+<div class="producto-info">
+<h3>Corona Tradicional</h3>
+<div class="precio">$280.000</div>
+<a class="btn" href="https://wa.me/573176360337">Cotizar</a>
+</div>
+</div>
+
+<div class="producto">
+<img src="https://images.unsplash.com/photo-1526045612212-70caf35c14df?w=800" alt="">
+<div class="producto-info">
+<h3>Corona Premium</h3>
+<div class="precio">$350.000</div>
+<a class="btn" href="https://wa.me/573176360337">Cotizar</a>
+</div>
+</div>
+
+<div class="producto">
+<img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=800" alt="">
+<div class="producto-info">
+<h3>Corona Corazón</h3>
+<div class="precio">$390.000</div>
+<a class="btn" href="https://wa.me/573176360337">Cotizar</a>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="contacto" id="contacto">
+
+<h2>¿Necesitas ayuda inmediata?</h2>
+
+<br>
+
+<p>
+Escríbenos ahora mismo.
+</p>
+
+<br>
+
+<a class="btn" href="https://wa.me/573176360337">
+WhatsApp: 317 636 0337
+</a>
+
 </section>
 
 <footer>
-    <p>Servicio disponible 24 horas.</p>
+
+© 2026 Jardines de Luz - Bogotá
+
 </footer>
+
+<a class="whatsapp" href="https://wa.me/573176360337">
+WhatsApp
+</a>
 
 </body>
 </html>
