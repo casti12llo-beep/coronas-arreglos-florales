@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -151,6 +150,12 @@ box-shadow:0 8px 25px rgba(0,0,0,.1);
 width:100%;
 height:280px;
 object-fit:cover;
+transition: transform 0.3s ease;
+cursor: pointer;
+}
+
+.producto img:hover{
+transform: scale(1.08);
 }
 
 .producto-info{
@@ -159,6 +164,12 @@ padding:20px;
 
 .producto h3{
 margin-bottom:10px;
+}
+
+.producto-info p{
+font-size:16px;
+color:#555;
+margin:10px 0;
 }
 
 .precio{
@@ -216,46 +227,22 @@ font-size:30px;
 }
 
 </style>
-.zoom-img {
-  width: 100%;
-  height: 280px;
-  object-fit: cover;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
 
-.zoom-img {
-  width: 100%;
-  height: 280px;
-  object-fit: cover;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.zoom-img:hover {
-  transform: scale(1.08);
-}
-</style>
 </head>
 
 <body>
 
 <header>
-
-<div class="logo">
-🌿 Jardines de Luz
-</div>
+<div class="logo">🌿 Jardines de Luz</div>
 
 <nav>
 <a href="#inicio">Inicio</a>
 <a href="#catalogo">Catálogo</a>
 <a href="#contacto">Contacto</a>
 </nav>
-
 </header>
 
 <section class="hero" id="inicio">
-
 <div class="hero-content">
 
 <h1>Coronas fúnebres y arreglos florales en Bogotá</h1>
@@ -269,55 +256,6 @@ Solicitar por WhatsApp
 </a>
 
 </div>
-
-</section>
-
-<section class="beneficios">
-
-<div class="card">
-<h2>+1.500</h2>
-<p>Entregas realizadas</p>
-</div>
-
-<div class="card">
-<h2>24/7</h2>
-<p>Atención inmediata</p>
-</div>
-
-<div class="card">
-<h2>60 min</h2>
-<p>Tiempo promedio de respuesta</p>
-</div>
-
-<div class="card">
-<h2>100%</h2>
-<p>Satisfacción garantizada</p>
-</div>
-
-</section>
-
-<section class="beneficios">
-
-<div class="card">
-<h3>🚚 Entrega Rápida</h3>
-<p>Servicio disponible 24 horas.</p>
-</div>
-
-<div class="card">
-<h3>🌹 Flores Frescas</h3>
-<p>Selección premium para cada arreglo.</p>
-</div>
-
-<div class="card">
-<h3>🤝 Atención Personalizada</h3>
-<p>Asesoría inmediata por WhatsApp.</p>
-</div>
-
-<div class="card">
-<h3>💳 Pago Seguro</h3>
-<p>Transferencia, Nequi y efectivo.</p>
-</div>
-
 </section>
 
 <section class="catalogo" id="catalogo">
@@ -327,107 +265,32 @@ Solicitar por WhatsApp
 <div class="productos">
 
 <div class="producto">
-
-<img src="Cesta_con_12_Rosas.jpg" alt="Canasta Dulce Romance" style="border-radius:12px;">
-
+<img src="Cesta_con_12_Rosas.jpg" alt="Canasta Dulce Romance">
 <div class="producto-info">
 <h3>Canasta Dulce Romance</h3>
 <p>Elegante arreglo floral con rosas frescas, ideal para ocasiones especiales y condolencias.</p>
 <div class="precio">$302.900</div>
 <a class="btn" href="https://wa.me/573176360337">Cotizar</a>
 </div>
-
 </div>
-  
+
 <div class="producto">
 <img src="corona.jpg" alt="Corona Fúnebre Premium">
 <div class="producto-info">
 <h3>Corona Fúnebre Paz Infinita</h3>
-<p>Rinde un homenaje solemne con esta corona tradicional de lirios, rosas blancas y flores de complemento premium. 
-</p>
+<p>Rinde un homenaje solemne con flores premium.</p>
 <div class="precio">$280.000</div>
 <a class="btn" href="https://wa.me/573176360337">Cotizar</a>
 </div>
 </div>
 
 <div class="producto">
-<img src="pedestal.jpg" alt="Pedestal Fúnebre Serenidad Eterna">
+<img src="pedestal.jpg" alt="Pedestal Fúnebre">
 <div class="producto-info">
 <h3>Pedestal Fúnebre Serenidad Eterna</h3>
-<p>Elegante arreglo vertical de lirios premium y margaritas blancas.</p>
+<p>Elegante arreglo vertical de flores blancas.</p>
 <div class="precio">$350.000</div>
 <a class="btn" href="https://wa.me/573176360337">Cotizar</a>
-</div>
-</div>
-
-<div class="producto">
-<img src="12_rosas_rojas.jpg" alt="12 Rosas Rojas">
-<div class="producto-info">
-<h3>12 Rosas Rojas</h3>
-<div class="precio">$390.000</div>
-<a class="btn" href="https://wa.me/573176360337">Cotizar</a>
-</div>
-</div>
-
-<div class="producto">
-<img src="24_Rosas.jpg" alt="24 Rosas Premium">
-<div class="producto-info">
-<h3>24 Rosas Blancas</h3>
-<div class="precio">$420.000</div>
-<a class="btn" href="https://wa.me/573176360337">Cotizar</a>
-</div>
-</div>
-
-<div class="producto">
-<img src="flores con frutas.jpg" alt="flores_con_frutas">
-<div class="producto-info">
-<h3>Flores con frutas</h3>
-<div class="precio">$450.000</div>
-<a class="btn" href="https://wa.me/573176360337">Cotizar</a>
-</div>
-</div>
-
-</div>
-
-</section>
-
-<section class="catalogo">
-
-<h2>Cobertura en Bogotá</h2>
-
-<p style="text-align:center;max-width:900px;margin:auto;font-size:18px;">
-Realizamos entregas en: Chapinero, Suba, Engativá, Kennedy, Usaquén, Fontibón, Teusaquillo, Barrios Unidos, Bosa, Ciudad Bolívar y municipios cercanos.
-</p>
-
-</section>
-
-<section class="catalogo">
-
-<h2>Opiniones de nuestros clientes</h2>
-
-<div class="productos">
-
-<div class="producto">
-<div class="producto-info">
-<h3 style="color:#ffd700; font-size:28px;">★★★★★</h3>
-<p>Excelente atención y entrega rápida. Todo llegó en perfectas condiciones.</p>
-<strong>María G.</strong>
-</div>
-</div>
-
-<div class="producto">
-<div class="producto-info">
-<h3 style="color:#ffd700; font-size:28px;">★★★★★</h3>
-<p>Muy elegantes las flores y excelente servicio. Totalmente recomendados.</p>
-<strong>Carlos R.</strong>
-</div>
-</div>
-
-<div class="producto">
-<div class="producto-info">
-<h3 style="color:#ffd700; font-size:28px;">★★★★★</h3>
-<p>Llegaron a tiempo y nos ayudaron en un momento difícil para la familia.</p>
-<strong>Andrea M.</strong>
 </div>
 </div>
 
@@ -439,13 +302,7 @@ Realizamos entregas en: Chapinero, Suba, Engativá, Kennedy, Usaquén, Fontibón
 
 <h2>¿Necesitas ayuda inmediata?</h2>
 
-<br>
-
-<p>
-Escríbenos ahora mismo y recibe atención personalizada las 24 horas.
-</p>
-
-<br>
+<p>Escríbenos 24/7 por WhatsApp</p>
 
 <a class="btn" href="https://wa.me/573176360337">
 WhatsApp: 317 636 0337
@@ -454,14 +311,10 @@ WhatsApp: 317 636 0337
 </section>
 
 <footer>
-
-© 2026 Jardines de Luz - Bogotá | Coronas Fúnebres y Arreglos Florales
-
+© 2026 Jardines de Luz - Bogotá
 </footer>
 
-<a class="whatsapp" href="https://wa.me/573176360337">
-WhatsApp
-</a>
+<a class="whatsapp" href="https://wa.me/573176360337">WhatsApp</a>
 
 </body>
 </html>
